@@ -1,0 +1,299 @@
+<?xml version = "1.0"?>
+<GameData>
+<!-- screenTitle is also used to identify you and your animation.
+     So make sure to include your name as part of the screenTitle -->
+<title>Adventure of A Brave Pig</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>300</maxFrames>
+<username>VictorLiu</username>
+<fps>true</fps>
+
+<view>
+  <width>854</width>
+  <height>600</height>
+</view>
+
+<world>
+  <width>1000</width>
+  <height>600</height>
+</world>
+
+<floor1st>
+  <file>assets/b1.jpg</file>
+  <factor>4</factor>
+  <transparency>false</transparency>
+</floor1st>
+
+<floor2nd>
+  <file>assets/b2.png</file>
+  <factor>2</factor>
+  <transparency>true</transparency>
+</floor2nd>
+
+<ground>
+  <file>assets/b3.png</file>
+  <factor>1</factor>
+  <transparency>true</transparency>
+</ground>
+
+<font name="font">
+  <file1>fonts/arial.ttf</file1>
+  <size1>24</size1>
+  <file2>fonts/contrast.ttf</file2>
+  <size2>24</size2>
+  <file3>fonts/04B_30__.TTF</file3>
+  <size3>20</size3>
+  <red>255</red>
+  <green>0</green>
+  <blue>0</blue>
+  <alpha>0</alpha>
+</font>
+
+<numberOfLights>1</numberOfLights>
+<lightSpec lightX1="100" lightY1="100" lightZ1="100" />
+<!-- larger noneffectiveLighting the smaller the radius of the light -->
+<noneffectiveLighting>100000</noneffectiveLighting>
+<ambientLighting>10000</ambientLighting>
+<brightness>15000000</brightness>
+<diffuseGrid>
+   <x>6</x>
+   <y>6</y>
+</diffuseGrid>
+
+<Hud>
+  <Loc x="30" y="160"/>
+  <width>500</width>
+  <height>300</height>
+</Hud>
+
+<!-- GameEntity -->
+
+<!-- Player -->
+<Player>
+  <startLoc x="250" y="500"/>
+  <frameInterval>100</frameInterval>
+  <speedX>200</speedX>
+  <speedY>200</speedY>
+  <number>1</number>
+  <bulletName>bullet</bulletName>
+  <difficultLevel>30</difficultLevel>
+  <enemySpeedIncr>50</enemySpeedIncr>
+  <maxLives>5</maxLives>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Player>
+
+<PlayerLeft>
+  <file>assets/runleft67x50.png</file>
+  <frames>3</frames>
+  <imageWidth>67</imageWidth>
+  <imageHeight>50</imageHeight> 
+  <transparency>false</transparency>
+</PlayerLeft>
+
+<PlayerRight>
+  <file>assets/runright67x50.png</file>
+  <frames>3</frames>
+  <imageWidth>67</imageWidth>
+  <imageHeight>50</imageHeight> 
+  <transparency>false</transparency>
+</PlayerRight>
+
+<PlayerIdleLeft>
+  <file>assets/idleleft71x47.png</file>
+  <frames>3</frames>
+  <imageWidth>71</imageWidth>
+  <imageHeight>47</imageHeight> 
+  <transparency>false</transparency>
+</PlayerIdleLeft>
+
+<PlayerIdleRight>
+  <file>assets/idleright71x47.png</file>
+  <frames>3</frames>
+  <imageWidth>71</imageWidth>
+  <imageHeight>47</imageHeight> 
+  <transparency>false</transparency>
+</PlayerIdleRight>
+
+<PlayerJumpLeft>
+  <file>assets/jumpleft71x56.png</file>
+  <frames>2</frames>
+  <imageWidth>71</imageWidth>
+  <imageHeight>56</imageHeight> 
+  <transparency>false</transparency>
+</PlayerJumpLeft>
+
+<PlayerJumpRight>
+  <file>assets/jumpright71x56.png</file>
+  <frames>2</frames>
+  <imageWidth>71</imageWidth>
+  <imageHeight>56</imageHeight> 
+  <transparency>false</transparency>
+</PlayerJumpRight>
+
+<PlayerUnderAttack>
+  <file>assets/under_attack60x59.png</file>
+  <frames>1</frames>
+  <imageWidth>60</imageWidth>
+  <imageHeight>59</imageHeight> 
+  <transparency>false</transparency>
+</PlayerUnderAttack>
+
+<bullet>
+  <file>assets/start.png</file>
+  <interval>300</interval>
+  <distance>300</distance>
+  <startLoc x="227" y="240"/>
+  <speedX>300</speedX>
+  <speedY>0</speedY>
+  <strategy>rectangular</strategy>
+  <transparency>true</transparency>
+</bullet>
+
+
+<!-- <YellowStar>
+  <file>assets/ball.png</file>
+  <startLoc x="227" y="240"/>
+  <speedX>300</speedX>
+  <speedY>300</speedY>
+  <transparency>false</transparency>
+  <number>0</number>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</YellowStar> -->
+
+
+<!-- Bat -->
+
+<Bat>
+  <startLoc x="600" y="10"/>
+  <frameInterval>100</frameInterval>
+  <speedX>50</speedX>
+  <speedY>50</speedY>
+  <number>5</number>
+  <detectDistance>600</detectDistance>
+  <spurtDistance>300</spurtDistance>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Bat>
+
+<BatLeft>
+  <file>assets/batleft48x43.png</file>
+  <frames>2</frames>
+  <imageWidth>48</imageWidth>
+  <imageHeight>43</imageHeight> 
+  <transparency>false</transparency>
+</BatLeft>
+
+<BatRight>
+  <file>assets/batright48x43.png</file>
+  <frames>2</frames>
+  <imageWidth>48</imageWidth>
+  <imageHeight>43</imageHeight>
+  <transparency>false</transparency>
+</BatRight>
+
+
+<!-- Alien -->
+
+<Alien>
+  <startLoc x="500" y="50"/>
+  <frameInterval>100</frameInterval>
+  <speedX>200</speedX>
+  <speedY>200</speedY>
+  <number>2</number>
+  <detectDistance>5</detectDistance>
+  <spurtDistance>10</spurtDistance>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Alien>
+
+<AlienLeft>
+  <file>assets/alienleft106x106.png</file>
+  <frames>4</frames>
+  <imageWidth>106</imageWidth>
+  <imageHeight>106</imageHeight>
+  <transparency>false</transparency>
+</AlienLeft>
+
+<AlienRight>
+  <file>assets/alienright106x106.png</file>
+  <frames>4</frames>
+  <imageWidth>106</imageWidth>
+  <imageHeight>106</imageHeight>
+  <transparency>false</transparency>
+</AlienRight>
+
+<!-- Fire -->
+
+<Fire>
+  <startLoc x="10" y="10"/>
+  <frameInterval>100</frameInterval>
+  <speedX>200</speedX>
+  <speedY>200</speedY>
+  <number>5</number>
+  <detectDistance>5</detectDistance>
+  <spurtDistance>10</spurtDistance>
+  <chunk>
+    <size>5</size>
+    <distance>200</distance>
+  </chunk>
+</Fire>
+
+<FireLeft>
+  <file>assets/fireleft43x50.png</file>
+  <frames>8</frames>
+  <imageWidth>43</imageWidth>
+  <imageHeight>50</imageHeight>
+  <transparency>false</transparency>
+</FireLeft>
+
+<FireRight>
+  <file>assets/fireright43x50.png</file>
+  <frames>8</frames>
+  <imageWidth>43</imageWidth>
+  <imageHeight>50</imageHeight>
+  <transparency>false</transparency>
+</FireRight>
+
+<!-- YellowStar -->
+
+<YellowStar>
+  <file>assets/1.png</file>
+  <startLoc x="227" y="240"/>
+  <speedX>300</speedX>
+  <speedY>300</speedY>
+  <transparency>false</transparency>
+  <number>1</number>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</YellowStar>
+
+<Maple>
+  <file>assets/maple.png</file>
+  <startLoc x="227" y="240"/>
+  <speedX>300</speedX>
+  <speedY>300</speedY>
+  <transparency>false</transparency>
+  <number>1</number>
+  <chunk>
+    <size>16</size>
+    <distance>200</distance>
+  </chunk>
+</Maple>
+
+</GameData>
